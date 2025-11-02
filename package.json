@@ -1,0 +1,12 @@
+{
+  "name": "argus-cloud-rtsp-relay",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "express": "^4.21.2",
+    "fluent-ffmpeg": "^2.1.3"
+  }
+}
