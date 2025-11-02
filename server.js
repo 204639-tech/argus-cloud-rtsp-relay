@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 8090;
 // ============================
 
 // 👉 Cambia esto por tu RTSP real (usa el substream si es Dahua/Hikvision)
-const RTSP_URL = "rtsp://admin:Polanco_huamani_3@192.168.0.191:554/cam/realmonitor?channel=1&subtype=1";
+const RTSP_URL = process.env.RTSP_URL || "rtsp://admin:Polanco_huamani_3@192.168.0.191:554/cam/realmonitor?channel=1&subtype=1";
 
 const HLS_DIR = path.join(__dirname, "public", "hls");
 const PLAYLIST = path.join(HLS_DIR, "index.m3u8");
